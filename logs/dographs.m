@@ -18,7 +18,7 @@ for k = 1:12
     plot(1:size(data,3), reshape(sumdata(k, 2, :), [1, size(data,3)]), 'color', cols(k,:));
     hold on;
 end
-xlabel('Minutes since 03-20 13:30 EDT');
+xlabel('Minutes since recording started');
 ylabel('Points');
 title('Points per team (sum of each account) versus time)');
 legend({
