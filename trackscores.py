@@ -59,7 +59,7 @@ def getNextLog(idx):
     try:
         resp = requests.get("http://gauss.ececs.uc.edu/standings8150.html")
         raw = resp.content.decode()
-        raw = raw.strip().split("\n")[20:]
+        raw = raw.strip().split("\n")[21:]
         raw = raw[:36]
         raw = "\n".join(raw).strip()
         raw = re.sub(r'</?tr>', '', raw)
